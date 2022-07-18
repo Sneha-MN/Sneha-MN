@@ -1,0 +1,87 @@
+
+<!-- saved from url=(0070)file:///C:/OneDrive%20-%20H&R%20BLOCK%20LTD/Desktop/Project/index.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <title>Website Design using HTML,CSS nad JavaScript </title>
+    <link rel="stylesheet" href="./Website Design using HTML,CSS nad JavaScript_files/style.css">   
+</head>
+<body>
+    <div class="main">
+    <nav>
+        <div class="logo">
+            <img src="./Website Design using HTML,CSS nad JavaScript_files/realmelogo.png">
+        <div class="nav-links">
+            <ul>
+                <li><a href="file:///C:/OneDrive%20-%20H&amp;R%20BLOCK%20LTD/Desktop/Project/index.html#">Home</a></li>
+                <li><a href="file:///C:/OneDrive%20-%20H&amp;R%20BLOCK%20LTD/Desktop/Project/index.html#">Phone</a></li>
+                <li><a href="file:///C:/OneDrive%20-%20H&amp;R%20BLOCK%20LTD/Desktop/Project/index.html#">Accessories</a></li>
+                <li><a href="file:///C:/OneDrive%20-%20H&amp;R%20BLOCK%20LTD/Desktop/Project/index.html#">Cart</a></li>
+            </ul>
+        </div>
+            </div>
+        
+    </nav>
+    <div class="Information">
+        
+        
+        <img src="./Website Design using HTML,CSS nad JavaScript_files/RealmeMobile.jpg" class="Mobile">
+        <div id="circle" style="transform: rotate(-90deg) rotate(-90deg) rotate(-90deg) rotate(-90deg);">
+            <div class="feature one">
+                <img src="./Website Design using HTML,CSS nad JavaScript_files/realmecamera.jpg">
+                <div>
+                    <h4>CAMERA</h4>
+                    <p> 12MP,Wide Angle Lens</p>
+                </div>
+            </div>
+            <div class="feature two">
+                <img src="./Website Design using HTML,CSS nad JavaScript_files/pic.jpg">
+                <div>
+                    <h4>PROCESSOR</h4>
+                    <p> Snapdragon Octa-core 11nm</p>
+                </div>
+            </div>
+            <div class="feature three">
+                <img src="./Website Design using HTML,CSS nad JavaScript_files/unnamed.png">
+                <div>
+                    <h4>DISPLAY</h4>
+                    <p> 6.5" mini-drop fullscreen</p>
+                </div>
+            </div>
+            <div class="feature four">
+                <img src="./Website Design using HTML,CSS nad JavaScript_files/image-260nw-1571964865.webp">
+                <div>
+                    <h4>BATTERY</h4>
+                    <p> 5000mAh , 720hrs, Standby</p>
+                </div>
+            </div>
+
+        </div>
+        </div>
+    </div>
+    <div class=" controls">
+        <img src="./Website Design using HTML,CSS nad JavaScript_files/uparrow.png" id="upBtn">
+        <h2>Features</h2>
+        <img src="./Website Design using HTML,CSS nad JavaScript_files/downarrow.png" id="downBtn">
+   </div>
+
+
+
+    <script>
+        var circle = document.getElementById("circle");
+        var upBtn = document.getElementById("upBtn");
+        var downBtn = document.getElementById("downBtn");
+        var rotateValue = circle.style.transform;
+        var rotateSum;
+        upBtn.onclick = function () {
+            rotateSum = rotateValue + "rotate(-90deg)";
+            circle.style.transform = rotateSum;
+            rotateValue = rotateSum;
+        }
+        downBtn.onclick = function () {
+            rotateSum = rotateValue + "rotate(90deg)";
+            circle.style.transform = rotateSum;
+            rotateValue = rotateSum;
+        }
+    </script>
+
+
+</body></html>
